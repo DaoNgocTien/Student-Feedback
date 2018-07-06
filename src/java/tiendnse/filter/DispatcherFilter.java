@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.io.PrintStream;
 import java.io.PrintWriter;
 import java.io.StringWriter;
+import java.util.ArrayList;
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
 import javax.servlet.FilterConfig;
@@ -23,7 +24,7 @@ import javax.servlet.http.HttpServletRequest;
  * @author Saisam
  */
 public class DispatcherFilter implements Filter {
-    
+    private ArrayList list = new ArrayList();
     private static final boolean debug = true;
     private final String loginPage = "login.html";
 
