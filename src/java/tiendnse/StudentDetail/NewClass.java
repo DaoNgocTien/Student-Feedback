@@ -10,5 +10,7 @@ package tiendnse.StudentDetail;
  * @author Saisam
  */
 public class NewClass {
-    
+    public void NewClass (){
+        System.out.println("New Class");
+    }
 }
